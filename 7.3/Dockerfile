@@ -13,7 +13,7 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 # install xdebug
 RUN pecl install xdebug
 
-COPY php-ci.ini $PHP_INI_DIR/conf.d/php-ci.ini
+COPY php-ci.ini /etc/php/7.3/cli/conf.d/php-ci.ini
 
 # add php csfixer
 ADD https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.15.3/php-cs-fixer.phar /usr/local/bin/php-cs-fixer
