@@ -16,7 +16,7 @@ RUN pecl install xdebug
 COPY php-ci.ini $PHP_INI_DIR/conf.d/
 
 # add php csfixer
-ADD https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.15.3/php-cs-fixer.phar /usr/local/bin/php-cs-fixer
+ADD https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.16.1/php-cs-fixer.phar /usr/local/bin/php-cs-fixer
 RUN chmod a+x /usr/local/bin/php-cs-fixer
 
 
